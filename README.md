@@ -10,7 +10,7 @@ If you need to reproduce our analysis, please follow the instructions below.
 
 Check out this repository and the two submodules (`awd-lstm-lm` and `fairseq`).
 
-`cd` into `data/`, download and unzip the [Wikitext-103 dataset](https://s3.amazonaws.com/research.metamind.io/wikitext/wikitext-103-v1.zip) dataset. Both `awd-lstm-lm` and `fairseq` need that dataset to build dictionaries. This process is automatic for `awd-lstm-lm` but needs to be run separately for `fairseq`, so also provide the [preprocessed wikitext-103 binary data dump](cs.jhu.edu/~sding/downloads/naacl2021/data-bin/wikitext-103.tar.gz) for fairseq.
+`cd` into `data/`, download and unzip the [Wikitext-103 dataset](https://s3.amazonaws.com/research.metamind.io/wikitext/wikitext-103-v1.zip) dataset. Both `awd-lstm-lm` and `fairseq` need that dataset to build dictionaries. This process is automatic for `awd-lstm-lm` but needs to be run separately for `fairseq`, so also provide the [preprocessed wikitext-103 binary data dump](http://cs.jhu.edu/~sding/downloads/naacl2021/data-bin/wikitext-103.tar.gz) for fairseq.
 
 `cd` into `models/` and follow the `README` to download finetuned models with `number` or `gender` prediction head.
 
@@ -32,9 +32,9 @@ out  out.malum  out.overall  out.passed.idx  out.pos.idx  out.verum
 
 ## Evaluate Faithfulness
 
-The faithfulness evaluations will be based on the saliency outputs generated from the step above. To help understand how faithfulness scripts work, we provided example saliency outputs in `scripts/faithfulness/example_gender` and `scripts/faithfulness/example_number`, respectively.
+The faithfulness evaluations will be based on the saliency outputs generated from the step above. To help understand how faithfulness scripts work, we provided example saliency outputs for the ***********Transformer+Smoothed** in `scripts/faithfulness/example-gender` and `scripts/faithfulness/example-number`, respectively.
 
-Follow the script in `scripts/faithfulness/{input-gender,input-numer,model}` to reproduce those numbers.
+Follow the script in `scripts/faithfulness/{input-gender,input-number,model}` to reproduce those numbers.
 
 ## Citation
 
