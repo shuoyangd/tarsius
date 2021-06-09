@@ -32,7 +32,7 @@ out  out.malum  out.overall  out.passed.idx  out.pos.idx  out.verum
 
 ## Evaluate Faithfulness
 
-The faithfulness evaluations will be based on the saliency outputs generated from the step above. To help understand how faithfulness scripts work, we provided example saliency outputs for the ***********Transformer+Smoothed** in `scripts/faithfulness/example-gender` and `scripts/faithfulness/example-number`, respectively.
+The faithfulness evaluations will be based on the saliency outputs generated from the step above. To help understand how faithfulness scripts work, we provided example saliency outputs for the `Transformer+SG` configuration on synthetic data in `scripts/faithfulness/example_gender` and `scripts/faithfulness/example_number`, respectively.
 
 Follow the script in `scripts/faithfulness/{input-gender,input-number,model}` to reproduce those numbers.
 
