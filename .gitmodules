@@ -1,0 +1,6 @@
+[submodule "fairseq"]
+	path = fairseq
+	url = https://github.com/shuoyangd/fairseq/
+[submodule "awd-lstm-lm"]
+	path = awd-lstm-lm
+	url = https://github.com/shuoyangd/awd-lstm-lm/
